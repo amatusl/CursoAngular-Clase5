@@ -37,22 +37,18 @@ export class DetalleListaProductoComponent implements OnInit {
 
   agregarAlCarro() {
     this.carroService.agregarProducto(this.producto);
-    // window.location.reload();
   }
 
   quitarUnAUnidadDelCarro() {
     console.log('tarea');
     this.carroService.quitarUnaUnidadProducto(this.producto);
-    //window.location.reload();
   }
 
   quitarLineaDelCarro() {
     console.log('tarea quita linea');
     this.carroService.quitarProducto(this.producto);
-    //window.location.reload();
   }
 
-  //cristian
   verificarSiExisteProducto() {
     this.existeProducto= false;
     this.carroCompra.productos = this.carroCompra.productos.map(productoCarro => {
